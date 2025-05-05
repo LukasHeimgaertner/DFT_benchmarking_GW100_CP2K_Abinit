@@ -1,0 +1,21 @@
+ntypat 3
+znucl 8 6 16 
+pseudos "GTH/O-q6, GTH/C-q4, GTH/S-q6"
+natom 3
+typat 1 2 3 
+xcart 0.0 0.0 2.1879247496010796
+0.0 0.0 0.0
+0.0 0.0 -2.94816151481486
+
+nstep 100
+toldfe 1.0d-10
+kptopt 0
+nkpt 1
+diemac 2.0
+pp_dirpath "/pc2/groups/hpc-prf-metdyn/epop2d10_Lukas/Pseudos"
+chksymbreak=0
+chksymtnons=0
+acell 3*60
+ecut 400
+nband 50
+icutcoul 0 

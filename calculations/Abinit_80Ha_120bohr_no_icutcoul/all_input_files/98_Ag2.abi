@@ -1,0 +1,19 @@
+ntypat 1
+znucl 47 
+pseudos "GTH/Ag-q19"
+natom 2
+typat 1 1 
+xcart 0.0 0.0 0.0
+0.0 0.0 4.7876207921181
+
+nstep 100
+toldfe 1.0d-10
+kptopt 0
+nkpt 1
+diemac 2.0
+pp_dirpath "/pc2/groups/hpc-prf-metdyn/epop2d10_Lukas/Pseudos"
+chksymbreak=0
+chksymtnons=0
+acell 3*120
+ecut 80
+nband 50

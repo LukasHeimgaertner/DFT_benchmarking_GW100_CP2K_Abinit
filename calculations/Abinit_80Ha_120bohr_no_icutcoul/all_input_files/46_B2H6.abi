@@ -1,0 +1,25 @@
+ntypat 2
+znucl 5 1 
+pseudos "GTH/B-q3, GTH/H-q1"
+natom 8
+typat 1 1 2 2 2 2 2 2 
+xcart 0.0 0.0 1.6761869518882
+0.0 0.0 -1.6761869518882
+1.8821670846456 0.0 0.0
+-1.8821670846456 0.0 0.0
+0.0 1.96682680893488 2.7663698747115397
+0.0 -1.96682680893488 2.7663698747115397
+0.0 1.96682680893488 -2.7663698747115397
+0.0 -1.96682680893488 -2.7663698747115397
+
+nstep 100
+toldfe 1.0d-10
+kptopt 0
+nkpt 1
+diemac 2.0
+pp_dirpath "/pc2/groups/hpc-prf-metdyn/epop2d10_Lukas/Pseudos"
+chksymbreak=0
+chksymtnons=0
+acell 3*120
+ecut 80
+nband 50

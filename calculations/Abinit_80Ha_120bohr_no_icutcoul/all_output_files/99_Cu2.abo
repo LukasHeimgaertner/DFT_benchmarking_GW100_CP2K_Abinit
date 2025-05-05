@@ -1,0 +1,289 @@
+
+.Version 9.6.2 of ABINIT 
+.(MPI version, prepared for a x86_64_linux_gnu11.3 computer) 
+
+.Copyright (C) 1998-2021 ABINIT group . 
+ ABINIT comes with ABSOLUTELY NO WARRANTY.
+ It is free software, and you are welcome to redistribute it
+ under certain conditions (GNU General Public License,
+ see ~abinit/COPYING or http://www.gnu.org/copyleft/gpl.txt).
+
+ ABINIT is a project of the Universite Catholique de Louvain,
+ Corning Inc. and other collaborators, see ~abinit/doc/developers/contributors.txt .
+ Please read https://docs.abinit.org/theory/acknowledgments for suggested
+ acknowledgments of the ABINIT effort.
+ For more information, see https://www.abinit.org .
+
+.Starting date : Sun  4 Aug 2024.
+- ( at 01h50 )
+  
+- The starting date is more than 2 years after the initial release
+- of this version of ABINIT, namely Nov 2021.
+- Note that the use beyond 3 years after the release will not be supported.
+- Action: please, switch to a more recent version of ABINIT.
+
+- input  file    -> final_calculation.abi
+- output file    -> final_calculation.abo
+- root for input  files -> final_calculationi
+- root for output files -> final_calculationo
+
+
+ Symmetries : space group P4/m m m (#123); Bravais tP (primitive tetrag.)
+================================================================================
+ Values of the parameters that define the memory need of the present run
+     intxc =       0    ionmov =       0      iscf =       7    lmnmax =       5
+     lnmax =       5     mgfft =     972  mpssoang =       3    mqgrid =   48317
+     natom =       2  nloc_mem =       1    nspden =       1   nspinor =       1
+    nsppol =       1      nsym =      16    n1xccc =       0    ntypat =       1
+    occopt =       1   xclevel =       2
+-    mband =          50        mffmem =           1         mkmem =           1
+       mpw =    29528732          nfft =   918330048          nkpt =           1
+================================================================================
+P This job should need less than                  303153.079 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+_ WF disk file :  22528.637 Mbytes ; DEN or POT disk file :  -1185.696 Mbytes.
+================================================================================
+
+--------------------------------------------------------------------------------
+------------- Echo of variables that govern the present computation ------------
+--------------------------------------------------------------------------------
+-
+- outvars: echo of selected default values                                      
+-   iomode0 =  0 , fftalg0 =312 , wfoptalg0 =  0
+-
+- outvars: echo of global parameters not present in the input file              
+-  max_nthreads =   64
+-
+ -outvars: echo values of preprocessed input variables --------
+            acell      1.2000000000E+02  1.2000000000E+02  1.2000000000E+02 Bohr
+              amu      6.35460000E+01
+      chksymbreak           0
+      chksymtnons           0
+           diemac      2.00000000E+00
+             ecut      8.00000000E+01 Hartree
+-          fftalg         312
+           istwfk        2
+              ixc          11
+           kptopt           0
+P           mkmem           1
+            natom           2
+            nband          50
+            ngfft         972     972     972
+             nkpt           1
+            nstep         100
+             nsym          16
+           ntypat           1
+              occ      2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000
+          spgroup         123
+           symrel      1  0  0   0  1  0   0  0  1      -1  0  0   0 -1  0   0  0 -1
+                      -1  0  0   0  1  0   0  0 -1       1  0  0   0 -1  0   0  0  1
+                      -1  0  0   0 -1  0   0  0  1       1  0  0   0  1  0   0  0 -1
+                       1  0  0   0 -1  0   0  0 -1      -1  0  0   0  1  0   0  0  1
+                       0  1  0   1  0  0   0  0  1       0 -1  0  -1  0  0   0  0 -1
+                       0 -1  0   1  0  0   0  0 -1       0  1  0  -1  0  0   0  0  1
+                       0 -1  0  -1  0  0   0  0  1       0  1  0   1  0  0   0  0 -1
+                       0  1  0  -1  0  0   0  0 -1       0 -1  0   1  0  0   0  0  1
+            tnons      0.0000000  0.0000000  0.0000000     0.0000000  0.0000000  0.0349552
+                       0.0000000  0.0000000  0.0349552     0.0000000  0.0000000  0.0000000
+                       0.0000000  0.0000000  0.0000000     0.0000000  0.0000000  0.0349552
+                       0.0000000  0.0000000  0.0349552     0.0000000  0.0000000  0.0000000
+                       0.0000000  0.0000000  0.0000000     0.0000000  0.0000000  0.0349552
+                       0.0000000  0.0000000  0.0349552     0.0000000  0.0000000  0.0000000
+                       0.0000000  0.0000000  0.0000000     0.0000000  0.0000000  0.0349552
+                       0.0000000  0.0000000  0.0349552     0.0000000  0.0000000  0.0000000
+           toldfe      1.00000000E-10 Hartree
+            typat      1  1
+           xangst      0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  2.2196998305E+00
+            xcart      0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  4.1946247769E+00
+             xred      0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  3.4955206474E-02
+            znucl       29.00000
+
+================================================================================
+
+ chkinp: Checking input parameters for consistency.
+
+================================================================================
+== DATASET  1 ==================================================================
+-   mpi_nproc: 1, omp_nthreads: 64 (-1 if OMP is not activated)
+
+
+--- !DatasetInfo
+iteration_state: {dtset: 1, }
+dimensions: {natom: 2, nkpt: 1, mband: 50, nsppol: 1, nspinor: 1, nspden: 1, mpw: 29528732, }
+cutoff_energies: {ecut:  80.0, pawecutdg:  -1.0, }
+electrons: {nelect:   3.80000000E+01, charge:   0.00000000E+00, occopt:   1.00000000E+00, tsmear:   1.00000000E-02, }
+meta: {optdriver: 0, ionmov: 0, optcell: 0, iscf: 7, paral_kgb: 0, }
+...
+
+ Exchange-correlation functional for the present dataset will be:
+  GGA: Perdew-Burke-Ernzerhof functional - ixc=11
+ Citation for XC functional:
+  J.P.Perdew, K.Burke, M.Ernzerhof, PRL 77, 3865 (1996)
+
+ Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
+ R(1)=120.0000000  0.0000000  0.0000000  G(1)=  0.0083333  0.0000000  0.0000000
+ R(2)=  0.0000000120.0000000  0.0000000  G(2)=  0.0000000  0.0083333  0.0000000
+ R(3)=  0.0000000  0.0000000120.0000000  G(3)=  0.0000000  0.0000000  0.0083333
+ Unit cell volume ucvol=  1.7280000E+06 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  9.00000000E+01  9.00000000E+01 degrees
+
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft= 972 972 972
+         ecut(hartree)=     80.000   => boxcut(ratio)=   2.01175
+
+--- Pseudopotential description ------------------------------------------------
+- pspini: atom type   1  psp file is /pc2/groups/hpc-prf-metdyn/epop2d10_Lukas/Pseudos/GTH/Cu-q19
+- pspatm: opening atomic psp file    /pc2/groups/hpc-prf-metdyn/epop2d10_Lukas/Pseudos/GTH/Cu-q19
+- Goedecker pseudopotential for Cu
+- 29.00000  19.00000     70301                znucl, zion, pspdat
+   10   11    2    2      2001   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
+ rloc=   0.3450000
+ cc(1:2)=   0.0519697   1.2490434
+ for angular momentum l =  0 r(l) =   0.2500285
+   h11, h12, h13 =   0.7501933  10.7358213   0.0000000
+        h22, h23 =             -13.8598857   0.0000000
+             h33 =                           0.0000000
+ for angular momentum l =  1 r(l) =   0.2220245
+   h11, h12, h13 = -13.0595989  14.7476383   0.0000000
+        h22, h23 =             -17.4496410   0.0000000
+             h33 =                           0.0000000
+   k11, k12, k13 =   0.1403535   0.1832279   0.0000000
+        k22, k23 =              -0.2167981   0.0000000
+             k33 =                           0.0000000
+ for angular momentum l =  2 r(l) =   0.2155684
+   h11, h12, h13 = -12.4567237   0.0000000   0.0000000
+        h22, h23 =               0.0000000   0.0000000
+             h33 =                           0.0000000
+   k11, k12, k13 =   0.0147808   0.0000000   0.0000000
+        k22, k23 =               0.0000000   0.0000000
+             k33 =                           0.0000000
+-  Local part computed in reciprocal space.
+
+ pspatm : COMMENT -
+  the projectors are not normalized,
+  so that the KB energies are not consistent with 
+  definition in PRB44, 8503 (1991). 
+  However, this does not influence the results obtained hereafter.
+  pspatm : epsatm=   16.66628140
+         --- l  ekb(1:nproj) -->
+             0   -1.082690    0.356307
+             1   -0.115382   -0.001318
+             2   -0.003821
+ pspatm: atomic psp has been read  and splines computed
+
+   1.26663739E+03                                ecore*ucvol(ha*bohr**3)
+--------------------------------------------------------------------------------
+
+_setup2: Arith. and geom. avg. npw (full set) are59057463.00059057463.000
+
+================================================================================
+
+--- !BeginCycle
+iteration_state: {dtset: 1, }
+solver: {iscf: 7, nstep: 100, nline: 4, wfoptalg: 0, }
+tolerances: {toldfe: 1.00E-10, }
+...
+
+     iter   Etot(hartree)      deltaE(h)  residm     vres2
+ ETOT  1  -291.95023182733    -2.920E+02 1.632E+01 2.752E+07
+ ETOT  2  -365.86075606847    -7.391E+01 1.753E+01 8.060E+06
+ ETOT  3  -377.62454950921    -1.176E+01 3.473E+00 4.053E+06
+ ETOT  4  -385.60006376754    -7.976E+00 9.751E-02 2.726E+06
+ ETOT  5  -387.51992131003    -1.920E+00 2.053E-02 2.052E+06
+ ETOT  6  -389.31047713451    -1.791E+00 1.606E-02 9.318E+05
+ ETOT  7  -390.77340749520    -1.463E+00 1.081E-02 3.538E+05
+ ETOT  8  -390.78599539605    -1.259E-02 4.025E-03 3.646E+05
+ ETOT  9  -390.53927586217     2.467E-01 7.692E-04 3.485E+05
+ ETOT 10  -297.70166841161     9.284E+01 9.692E-02 1.410E+07
+ ETOT 11  -390.67974420886    -9.298E+01 4.916E-02 1.643E+05
+ ETOT 12  -390.66954630830     1.020E-02 1.729E-03 1.690E+05
+ ETOT 13  -390.72771567793    -5.817E-02 7.420E-04 7.430E+04
+ ETOT 14  -390.82090114101    -9.319E-02 1.666E-04 5.532E+04
+ ETOT 15  -390.79146014435     2.944E-02 4.234E-05 4.828E+04
+ ETOT 16  -390.81760007594    -2.614E-02 4.082E-05 3.643E+04
+ ETOT 17  -390.77859704805     3.900E-02 4.629E-05 2.834E+04
+ ETOT 18  -390.82535585199    -4.676E-02 4.195E-05 2.587E+04
+ ETOT 19  -389.86032985127     9.650E-01 3.907E-03 8.993E+04
+ ETOT 20  -390.24501501684    -3.847E-01 9.913E-04 1.373E+04
+ ETOT 21  -390.62395063582    -3.789E-01 8.985E-03 7.792E+03
+ ETOT 22  -390.88451811014    -2.606E-01 1.239E-03 2.872E+03
+ ETOT 23  -390.88646171472    -1.944E-03 4.278E-04 2.085E+03
+ ETOT 24  -390.88549610631     9.656E-04 1.032E-05 1.847E+03
+ ETOT 25  -390.88054795128     4.948E-03 1.199E-04 1.649E+03
+ ETOT 26  -390.89099005262    -1.044E-02 1.100E-05 1.278E+03
+ ETOT 27  -390.89347585575    -2.486E-03 3.265E-06 9.370E+02
+ ETOT 28  -390.90016434334    -6.688E-03 1.154E-05 7.301E+02
+ ETOT 29  -390.78734495927     1.128E-01 8.372E-04 3.987E+03
+ ETOT 30  -390.90576465582    -1.184E-01 5.046E-04 9.469E+02
+ ETOT 31  -390.90590417175    -1.395E-04 2.488E-05 9.373E+02
+ ETOT 32  -390.90599202604    -8.785E-05 8.733E-07 5.743E+02
+ ETOT 33  -390.90585360981     1.384E-04 5.280E-07 4.649E+02
+ ETOT 34  -390.90504934335     8.043E-04 1.193E-06 3.834E+02
+ ETOT 35  -390.90539587529    -3.465E-04 1.554E-07 3.459E+02
+ ETOT 36  -390.90436656415     1.029E-03 1.227E-06 2.297E+02
+ ETOT 37  -390.90584995058    -1.483E-03 2.620E-06 3.144E+02
+ ETOT 38  -390.88397083412     2.188E-02 1.708E-04 1.725E+03
+ ETOT 39  -390.90427756955    -2.031E-02 4.348E-05 5.140E+02
+ ETOT 40  -390.90628182893    -2.004E-03 8.078E-06 5.191E+02
+ ETOT 41  -390.90637249727    -9.067E-05 1.527E-06 2.957E+02
+ ETOT 42  -390.90653146995    -1.590E-04 8.479E-07 2.050E+02
+ ETOT 43  -390.90650278329     2.869E-05 2.970E-08 2.093E+02
+ ETOT 44  -390.90648050641     2.228E-05 1.155E-08 2.025E+02
+ ETOT 45  -390.90560529555     8.752E-04 9.439E-06 2.825E+02
+ ETOT 46  -390.90640893923    -8.036E-04 2.089E-06 1.573E+02
+ ETOT 47  -390.90462881939     1.780E-03 2.342E-05 6.833E+02
+ ETOT 48  -390.90641595814    -1.787E-03 5.628E-06 1.282E+02
+ ETOT 49  -390.90654529939    -1.293E-04 5.876E-07 8.750E+01
+ ETOT 50  -390.90655914323    -1.384E-05 1.883E-07 7.001E+01
+ ETOT 51  -390.90653519483     2.395E-05 7.003E-08 8.296E+01
+ ETOT 52  -390.90652470931     1.049E-05 2.287E-08 7.609E+01
+ ETOT 53  -390.90652187973     2.830E-06 7.276E-10 6.597E+01
+ ETOT 54  -390.90633039207     1.915E-04 2.733E-06 1.619E+02
+ ETOT 55  -390.90653356415    -2.032E-04 5.889E-07 6.914E+01
+ ETOT 56  -390.90652937338     4.191E-06 1.185E-06 1.510E+02
+ ETOT 57  -390.90655284495    -2.347E-05 3.671E-08 7.922E+01
+ ETOT 58  -390.90652195618     3.089E-05 1.042E-07 7.117E+01
+ ETOT 59  -390.90651216599     9.790E-06 2.325E-08 4.219E+01
+ ETOT 60  -390.90654743870    -3.527E-05 5.717E-08 4.060E+01
+ ETOT 61  -390.90656057806    -1.314E-05 9.515E-08 3.336E+01
+ ETOT 62  -390.90656287363    -2.296E-06 4.052E-08 2.983E+01
+ ETOT 63  -390.90644449947     1.184E-04 7.788E-07 1.234E+02
+ ETOT 64  -390.90655460225    -1.101E-04 3.875E-07 4.612E+01
+ ETOT 65  -390.90656177819    -7.176E-06 5.232E-08 4.538E+01
+ ETOT 66  -390.90656244246    -6.643E-07 6.065E-09 3.817E+01
+ ETOT 67  -390.90656232916     1.133E-07 2.760E-10 2.849E+01
+ ETOT 68  -390.90655810715     4.222E-06 5.673E-08 3.530E+01
+ ETOT 69  -390.90656264838    -4.541E-06 1.670E-08 1.740E+01
+ ETOT 70  -390.90656204462     6.038E-07 1.344E-09 1.250E+01
+ ETOT 71  -390.90656289160    -8.470E-07 4.441E-09 1.248E+01
+ ETOT 72  -390.90653194582     3.095E-05 2.038E-07 7.033E+01
+ ETOT 73  -390.90656218537    -3.024E-05 1.359E-07 1.348E+01
+ ETOT 74  -390.90656258476    -3.994E-07 2.780E-08 1.290E+01
+ ETOT 75  -390.90656242431     1.604E-07 1.111E-08 8.652E+00
+ ETOT 76  -390.90656273413    -3.098E-07 5.092E-10 5.938E+00
+ ETOT 77  -390.90656268109     5.304E-08 7.498E-11 4.568E+00
+ ETOT 78  -390.90656280815    -1.271E-07 3.895E-09 3.741E+00
+ ETOT 79  -390.90656290435    -9.619E-08 1.172E-09 3.436E+00
+ ETOT 80  -390.90656291056    -6.216E-09 1.589E-11 3.186E+00
+ ETOT 81  -390.90655992527     2.985E-06 1.593E-08 1.740E+01
+ ETOT 82  -390.90656259100    -2.666E-06 8.103E-09 2.524E+00
+ ETOT 83  -390.90656245472     1.363E-07 1.584E-08 4.026E+00
+ ETOT 84  -390.90656287061    -4.159E-07 4.621E-09 1.622E+00
+ ETOT 85  -390.90656272717     1.434E-07 6.303E-10 2.747E+00
+ ETOT 86  -390.90656288669    -1.595E-07 4.524E-10 8.809E-01
+ ETOT 87  -390.90656291546    -2.876E-08 1.888E-10 4.057E-01
+ ETOT 88  -390.90656291303     2.427E-09 5.885E-12 4.854E-01
+ ETOT 89  -390.90656290824     4.794E-09 6.872E-12 7.211E-01
+ ETOT 90  -390.90656287511     3.312E-08 8.215E-11 1.080E+00
+ ETOT 91  -390.90656291395    -3.883E-08 4.560E-10 1.058E-01
+ ETOT 92  -390.90656291627    -2.328E-09 1.725E-11 1.603E-01
