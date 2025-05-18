@@ -33,3 +33,7 @@ $$
 $$
 
 - `BASIS_TZV2P_MOLOPT_PLUS_AUG_QZVP` are the Basis sets used in the  $\textbf{CP2K}_{\textbf{C}_\textbf{0}}$ calculation
+
+# DOI: 
+
+[![DOI](https://zenodo.org/badge/978112122.svg)](https://doi.org/10.5281/zenodo.15458860)
